@@ -14,24 +14,18 @@ body{
     width: 100%;
 }
 /* headerアイコン */
-.inner-menu{
+.inner-menu ul{
     align-items: center;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    list-style: none;
 }
-.inner-menu p:first-child{
+.inner-menu ul li:first-child{
     margin-right: auto;
     margin-left: 55px;
 }
-
-.inner-menu .logo a img{
-    height: 32px;
-    width: 58px;
-}
-.inner-menu .flex-item a img{
-    height: 26px;
-    width: 26px;
+.inner-menu .flex-item img{
+    vertical-align: bottom;
 }
 .inner-menu .flex-item{
     flex-basis: 60px;
@@ -73,7 +67,9 @@ body{
 .pagePath{
     color: #999999;
     font-size: 12px;
-    margin: 100px auto 50px auto;
+    left: 0;
+    right: 0;
+    margin: 70px auto 30px auto;
     width: 1000px;
 }
 .pagePath a{
@@ -87,13 +83,15 @@ body{
 }
 .mainVisual .mainVisualText{
     position: absolute;
-    right: 890px;
-    top: 40px;
+    left: 0;
+    right: 0;
+    margin: 30px auto 0 auto;
+    width: 1000px;
 }
 
 .mainVisual .mainVisualText p{
     color: #ffffff;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.4;
     margin: 0;
 }
@@ -117,7 +115,7 @@ body{
     justify-content: flex-end;
     margin: auto;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 100px;
     width: 800px;
 }
@@ -270,13 +268,27 @@ p.btn{
     background-size: contain;
     content: '';
     height: 20px;
-    position: absolute;
     width: 20px;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     margin: auto;
 }
+.prev-link .prev-next-label:before{
+    background-image: url("../../image/icon_left.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 .next-link p{
     color: #0c419a;
     margin: 0;
@@ -304,9 +316,7 @@ p.btn{
     margin: 40px 0 40px 0;
     padding: 20px;
 }
-
 .flex_test-box ul{
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -317,10 +327,15 @@ p.btn{
     border: solid 1px #cccccc;
     color: #0c419a;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin: 0 5px 20px 5px;
     padding: 15px 20px;
     position: relative;
-    width: 27%;
+    width: 200px;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /*local-navigation アイコン画像 */
@@ -351,7 +366,7 @@ p.btn{
     margin: 0;
 }
 
-#information .heading-typeA{
+.heading-typeA{
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -452,13 +467,12 @@ p.btn{
     height: 28px;
     width: 28px;
 }
-.followUs-icon ul:before{
+.followUs-icon .followUs{
     content: 'Follow Us';
     color: #005bac;
     font-size: 20px;
     font-family: HelveticaNeue;
     font-weight: 700;
-    flex-basis: 100px;
     white-space: nowrap;
 }
 
