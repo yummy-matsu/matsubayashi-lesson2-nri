@@ -262,7 +262,7 @@ p.btn{
     padding-left: 20px;
     margin: 0;
 }
-.prev-link p:before{
+.prev-link .prev-back-label:before{
     background-image: url("../../image/icon_prev.jpg");
     background-repeat: no-repeat;
     background-size: contain;
